@@ -28,7 +28,7 @@ public class LightBoard
   public boolean evaluateLight(int row, int col)
   {
     int count = 0;
-    for(int r = 0; r < row; r++){
+    for(int r = 0; r < lights[row].length; r++){
       if(lights[r][col] == true)
         count++;
     }
